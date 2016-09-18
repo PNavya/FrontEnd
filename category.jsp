@@ -14,7 +14,7 @@
  <form:form action="${addAction}" commandName="category">
  <table>
  <tr>
- <td><form:label path="catid"> <spring:message text= "catid" ></spring:message> </form:label></td>
+ <td>Category Id:</td>
  <c:choose>
  <c:when test="${!empty category.catid}">
  <td><form:input path="catid" disabled="true" readonly="true"/></td>
@@ -26,18 +26,19 @@
  </tr>
  
  <tr>
- <td><form:label path="name"> <spring:message text="Name"></spring:message>  </form:label></td>
+ <td>Category Name:</td>
  <td><form:input path="name" required="true"/></td>
  </tr>
  
 <tr>
-<td><form:label path="description"> <spring:message text="Description"></spring:message></form:label> </td>
+<td>Category Description:</td>
  <td><form:input path="description" required="true"/></td>
  </tr>
  <tr>
- <td colspan="2"><c:if test="${!empty category.name}">
+ <%-- <td colspan="2"><c:if test="${!empty category.name}">
  <input type="submit" value="Update Category"/>
-</c:if></td><td>
+</c:if></td> --%>
+<td>
  <input type="submit" value="Add Category"/></td>
 </tr>
 </table>

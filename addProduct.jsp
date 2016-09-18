@@ -38,8 +38,8 @@
 	</form:form>
 </div>
 
-<h2>Category List</h2>
-<c:if test="${!empty categoryList}">
+<h2>Product List</h2>
+<c:if test="${!empty productList}">
 	<table>
 		<tr>
 			<th>Product ID</th>
